@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>College Study Hub</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html" id="nav-login">Login</a></li>
+                <li><a href="about.html" id="nav-about">About</a></li>
+                <li><a href="purpose.html" id="nav-purpose">Purpose</a></li>
+                <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                <li><a href="courses.html" id="nav-courses">Courses</a></li>
+                <li><a href="admin-login.html" id="nav-admin-login">Admin Login</a></li>
+                <li><button id="logoutButton" style="display:none;" onclick="logout()">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="College Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="user-content" style="display:none;">
+            <h2>Study Materials</h2>
+            <div id="subject-list">
+                <!-- User subject content will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
